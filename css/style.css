@@ -261,8 +261,8 @@ main {
 }
 
 footer {
-  background: rgba(96, 2, 2, 0.48);
-  color: white;
+  background: rgba(188, 165, 165, 0.48);
+  color: #1e1616;
   text-align: center;
   padding: 2rem 0;
   backdrop-filter: blur(10px);
