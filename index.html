@@ -23,10 +23,212 @@
 </head>
 
 <body>
+<header>
+  <nav class="container">
+    <div class="logo">
+      <svg class="icon" viewBox="0 0 24 24">
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+      </svg>
+      Plan de Pruebas
+    </div>
+    <ul class="nav-links">
+      <li><a href="#overview">Resumen</a></li>
+      <li><a href="#strategy">Estrategia</a></li>
+      <li><a href="#timeline">Cronograma</a></li>
+      <li><a href="#results">Resultados</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Sistema Biblioteca</h1>
+      <p>Plan integral de pruebas para sistema de gestión bibliotecaria desarrollado con Spring Boot y React</p>
+
+      <div class="tech-stack">
+        <span class="tech-badge">Spring Boot</span>
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">Testing Sistemático</span>
+        <span class="tech-badge">Metodología Ágil</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="overview" class="container">
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-number">10</div>
+        <div class="metric-label">Secciones del Plan</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number">8</div>
+        <div class="metric-label">Tipos de Pruebas</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number">15+</div>
+        <div class="metric-label">Casos de Prueba</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number">80%</div>
+        <div class="metric-label">Cobertura Objetivo</div>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+          </svg>
+          Análisis de Requerimientos
+        </h3>
+        <p>Mapeo completo de requerimientos funcionales y no funcionales del sistema, incluyendo matriz de trazabilidad para garantizar cobertura total.</p>
+        <ul>
+          <li>Requerimientos funcionales priorizados</li>
+          <li>Criterios de rendimiento y seguridad</li>
+          <li>Matriz de trazabilidad casos-requerimientos</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12,2C13.1,2 14,2.9 14,4C14,5.1 13.1,6 12,6C10.9,6 10,5.1 10,4C10,2.9 10.9,2 12,2M21,9V7L15,1H5C3.89,1 3,1.89 3,3V7H9V9H21M7,15H9V17H16V19H9V21H7V19H2V17H7V15Z"/>
+          </svg>
+          Estrategia de Testing
+        </h3>
+        <p>Enfoque integral que combina pruebas manuales y automatizadas, con testing basado en riesgos y metodología incremental.</p>
+        <ul>
+          <li>8 tipos de pruebas definidos</li>
+          <li>Criterios de entrada y salida claros</li>
+          <li>Automatización del 70% de casos UI</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M19,3H5C3.89,3 3,3.89 3,5V19C3,20.11 3.89,21 5,21H19C20.11,21 21,20.11 21,19V5C21,3.89 20.11,3 19,3M19,19H5V5H19V19Z"/>
+          </svg>
+          Entornos y Herramientas
+        </h3>
+        <p>Configuración profesional de ambientes de testing con herramientas especializadas para gestión, automatización y análisis.</p>
+        <ul>
+          <li>Ambientes Dev, QA y Pre-prod</li>
+          <li>Selenium para automatización UI</li>
+          <li>JMeter para pruebas de rendimiento</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2Z"/>
+          </svg>
+          Casos de Prueba Críticos
+        </h3>
+        <p>Conjunto completo de casos de prueba organizados por módulos y criticidad, cubriendo funcionalidades de administrador y usuario.</p>
+
+        <div class="test-cases-preview">
+          <div class="test-case">
+            <span>ADMIN-CRUD-01: Crear libro</span>
+            <span class="status-badge status-critical">Crítico</span>
+          </div>
+          <div class="test-case">
+            <span>USER-PRES-01: Préstamo exitoso</span>
+            <span class="status-badge status-critical">Crítico</span>
+          </div>
+          <div class="test-case">
+            <span>INT-API-01: Comunicación Frontend-Backend</span>
+            <span class="status-badge status-high">Alto</span>
+          </div>
+          <div class="test-case">
+            <span>USER-CONS-01: Consulta de catálogo</span>
+            <span class="status-badge status-medium">Medio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="container">
+    <div class="timeline">
+      <h2 style="text-align: center; margin-bottom: 2rem; color: #4a5568;">Cronograma de Ejecución</h2>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg style="width: 20px; height: 20px; fill: white;" viewBox="0 0 24 24">
+            <path d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22H9M10,16V19.08L13.08,16H20V4H4V16H10Z"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <h4>Fase 1: Preparación (8 días)</h4>
+          <p>Análisis de requerimientos y diseño de casos de prueba. Configuración de ambientes y preparación de datos de prueba.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg style="width: 20px; height: 20px; fill: white;" viewBox="0 0 24 24">
+            <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <h4>Fase 2: Ejecución Funcional (7 días)</h4>
+          <p>Ejecución de pruebas funcionales críticas incluyendo CRUD, validaciones y casos de integración frontend-backend.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg style="width: 20px; height: 20px; fill: white;" viewBox="0 0 24 24">
+            <path d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <h4>Fase 3: Pruebas No Funcionales (3 días)</h4>
+          <p>Pruebas de rendimiento, seguridad y usabilidad. Validación de criterios no funcionales definidos.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <svg style="width: 20px; height: 20px; fill: white;" viewBox="0 0 24 24">
+            <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+          </svg>
+        </div>
+        <div class="timeline-content">
+          <h4>Fase 4: Cierre y Reportes (2 días)</h4>
+          <p>Análisis de métricas, generación de reportes finales y documentación de lecciones aprendidas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section container">
+    <h2 style="color: #4a5568; margin-bottom: 1rem;">Documentación Completa</h2>
+    <p style="color: #666; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Accede al plan completo de pruebas con todos los detalles técnicos, matrices de trazabilidad, casos de prueba detallados y anexos de configuración.
+    </p>
+
+    <a href="#" class="btn" onclick="downloadPDF()">
+      <svg style="width: 20px; height: 20px; fill: white; margin-right: 8px; vertical-align: middle;" viewBox="0 0 24 24">
+        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+      </svg>
+      Descargar Plan Completo
+    </a>
+
+    <a href="#overview" class="btn btn-secondary">Ver Detalles Técnicos</a>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Plan de Pruebas - Sistema Biblioteca | Proyecto Universitario</p>
+    <p style="margin-top: 0.5rem; opacity: 0.8;">Desarrollado con metodología profesional de testing de software</p>
+  </div>
+</footer>
 
 </body>
 
