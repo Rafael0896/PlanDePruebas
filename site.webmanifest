@@ -1,12 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "name": "Plan de Pruebas - Sistema Biblioteca",
+  "short_name": "Plan QA",
+  "icons": [
+    { "src": "./imagen.jpg", "sizes": "192x192", "type": "imagen/jpg" },
+    { "src": "./imagen.jpg", "sizes": "512x512", "type": "imagen/jpg" }
+  ],
+  "theme_color": "#fafafa",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "./"
 }
